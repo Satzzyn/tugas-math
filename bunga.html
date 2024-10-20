@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>cara membuat perhitungan bunga menggunakan java script></title>
+</head>
+<script language="JavaScript">
+function hitung()
+
+{
+var saldo=parseFloat(document.f10115456.isaldo.value);
+var bunga=parseFloat(document.f10115456.ibunga.value)/100;
+var waktu=parseFloat(document.f10115456.iwaktu.value);
+
+var hasil="";
+for(i=1;i<=waktu;i++)
+{
+saldo=saldo+(saldo*bunga);
+hasil=hasil+"saldo bulan "+i+"= Rp. "+saldo+"\n";
+}
+
+document.f10115456.ohasil.value=hasil;
+
+}
+</script>
+<form name="f10115456">
+<h2><center> perhitungan bunga</center> </h2>
+<br>
+<pre>
+Data input :
+saldo   <input type="text"size=20 name="isaldo">
+bunga   <input type="text"size=20 name="ibunga">%
+waktu   <input type="text"size=20 name="iwaktu">bulan
+</pre>
+<br>
+<input type="button" value="hitung" onclick="hitung()">
+<input type="reset" value="reset">
+<pre>
+hasil perhitungan  :
+<textarea name="ohasil" rows="10" cols="83"> Hasil Perhitungan akan muncul disini</textarea
+</div>
+</pre>
+</form>
+</div>
+</body>
+</html>
